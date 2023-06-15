@@ -3,9 +3,15 @@ const repeatString = function(word, num) {
   for (let i = 0; i < num; i++) {
     if (num >= 0) {
       newWord = newWord + word;
-    } else {
-      newWord == "ERROR";
-    }
+    } 
+  }
+
+  if (num < 0) {
+    newWord = "ERROR";
+  }
+
+  if (word == "") {
+    newWord = "";
   }
 
   return newWord;
